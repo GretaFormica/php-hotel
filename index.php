@@ -51,6 +51,40 @@
     <title>Hotel</title>
 </head>
 <body>
-    
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <td> <b>Name</b> </td>
+                <td> <b>Description</b> </td>
+                <td> <b>Parking</b> </td>
+                <td> <b>Vote</b> </td>
+                <td> <b>Distance to the center</b> </td>
+            </tr>
+
+        </thead>
+           
+            
+        <tbody>
+
+            <?php foreach($hotels as $hotel) { ?>
+
+                <tr>
+
+                    <?php foreach($hotel as $item) { ?>
+
+                        <td> <?php echo $item; ?> </td>
+                        
+                    <?php } ?>
+
+                </tr>
+
+            <?php } ?>
+                
+        </tbody>
+    </table>
+
 </body>
 </html>
